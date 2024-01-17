@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+body{
+    background: #0c192c;
+   }
+   .text{
+    text-shadow: 
+    2px 2px rgb(255, 16, 243),
+    4px 4px blue,
+    6px 6px red,
+    8px 8px blueviolet
+
+    ;
+   }
+   .cotainer{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+   }
+   .bubbles{
+    position: relative;
+    display: flex;
+   }
+   .bubbles span{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50% #4fc3dc,
+    0 0 100% #4fc3dc,
+    ;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--1));
+
+   }
+   .bubbles span:nth-child(even)
+   {
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50% #ff2d75,
+    0 0 100% #ff2d75,
+    ;
+   }
+   @keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+   }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+        }
+
+        .blob:nth-child(2) {
+            filter: blur(100px);
+        }
+
+        body {
+            background: url(images/AdobeStock_397661567_Preview.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            min-width: 100%;
+        }
+        .circle{
+            position: absolute;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            background: white;
+            animation: animate 2s linear infinite;
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+        .circle:nth-child(2){
+            animation-delay: 0.3s;
+        }
+        .circle:nth-child(3){
+            animation-delay: 0.5s;
+        
+        }
+        .circle:nth-child(4){
+            animation-delay: 0.7s;
+        
+        }
+        @keyframes animate {
+            0% { transform-origin: 400% 50%; transform: rotate(0);}
+            50% { transform-origin: 400% 50%; transform: rotate(360deg);}
+            50.1% { transform-origin: -300% 50%; transform: rotate(360deg);}
+        }
+    </style>
+
+</head>
+
+<body class="">
+    <div>
+       
+        <ul class="nav text-bg-dark justify-content-end ">
+            <div class="justify-content-start   rounded-circle">
+                <img src="images/pc1.png" class="rounded-circle mx-2" width="50">
+            </div>
+            <li class="nav-item  justify-content-end">
+                <a class="nav-link text-light" href="#">HOME</a>
+            </li>
+            <li class="nav-item  justify-content-end">
+                <a class="nav-link text-light" href="#">Services</a>
+            </li>
+            <li class="nav-item  justify-content-end">
+                <a class="nav-link text-light ">About us</a>
+            </li>
+            <li class="nav-item  justify-content-end">
+                <a class="nav-link text-light" href="#">Contact</a>
+            </li>
+            <li class="nav-item  justify-content-end">
+                <a class="nav-link text-light " href="#">PAGES</a>
+            </li>
+            <li class="nav-item  justify-content-end">
+                <a class="nav-link text-light" href="#">Samples</a>
+            </li>
+            <li class="nav-item  justify-content-end">
+                <a class="nav-link text-light " href="#">Templates</a>
+                
+            </li>
+
+            <button type="button" class="btn btn-outline-warning col-sm-2 mx-5"><a href="registration/signup.html" style="color: yellow; text-decoration: none;">SIGN UP</a> </button>
+        </ul>
+    </div>
+
+    <div class=" col-lg-8 mx-5 mb-5    p-2 " style="background: transparent; margin-top: 10%;">
+        <h2 class="mx-auto text-warning">MULTI-UTRA COMPANY</h2>
+        <p class="text-light fs-5">Multi-Utra Company is the company that has wide designing spectrum we deal with<br>
+            WEB DEVELOPER,, ANIMATION CREATOR,, VIDEO EDITOR,, CREATIVE DESIGNING,, POSTERS,,<br>
+            LOGOS,, & MOTION GRAPHICS TEMPLATES.........
+        
+        </p>
+        <button type="button" class="btn btn-outline-warning">Get started >></button>
+
+      
+    </div>
+<div class="circle bg-warning" ></div>
+<div class="circle bg-success" ></div>
+<div class="circle bg-danger" ></div>
+
+</body>
+
+</html>
